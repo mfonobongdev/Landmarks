@@ -77,6 +77,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B546ADD289FB3C4003DEC0D /* Build configuration list for PBXNativeTarget "Landmarks" */;
 			buildPhases = (
+				7B21293428A25E7800664B4A /* ShellScript */,
 				7B546ACB289FB3C0003DEC0D /* Sources */,
 				7B546ACC289FB3C0003DEC0D /* Frameworks */,
 				7B546ACD289FB3C0003DEC0D /* Resources */,
@@ -134,6 +135,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7B21293428A25E7800664B4A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n    swiftlint autocorrect\nelse\n    echo \"SwiftLint is not installed\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7B546ACB289FB3C0003DEC0D /* Sources */ = {
